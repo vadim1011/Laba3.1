@@ -3,9 +3,11 @@ int s = 0;
 int n = 1;
 do
 {
-    if (n % 9 == 0)
+    switch (n % 9)
     {
-        s += n;
+        case 0 when n > 0:
+            s += n;
+            break;
     }
     n++;
 } while (n <= 10);
